@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>My To-Do List</h1>
+            <p>Stay organized and productive</p>
+        </div>
+        
+        <div class="task-input">
+            <input type="text" id="new-task" placeholder="Add a new task...">
+            <button id="add-btn">Add</button>
+        </div>
+        
+        <ul class="task-list" id="task-list">
+            <!-- Initially empty -->
+        </ul>
+        
+        <div class="empty-state" id="empty-state">
+            <p>Your list is empty</p>
+            <p>Add tasks to get started</p>
+        </div>
+        
+        <div class="footer">
+            <div id="task-count">0 tasks remaining</div>
+            <button class="clear-btn" id="clear-btn">Clear Completed</button>
+        </div>
+    </div>
+</body>
+</html>

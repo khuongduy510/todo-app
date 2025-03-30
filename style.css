@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.header {
+  background: #4b70e2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.task-input {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.task-input button {
+  background: #4b70e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.task-input button:hover {
+  background: #3a5bc7;
+}
+
+.task-list {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.task-list li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list li:last-child {
+  border-bottom: none;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 15px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.task span {
+  font-size: 16px;
+  color: #333;
+  flex: 1;
+}
+
+.task-list li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.actions {
+  display: flex;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.actions button:hover {
+  opacity: 1;
+}
+
+.edit-btn {
+  color: #4b70e2;
+}
+
+.delete-btn {
+  color: #e74c3c;
+}
+
+.footer {
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 14px;
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.clear-btn:hover {
+  opacity: 1;
+}
+
+/* For empty state */
+.empty-state {
+  padding: 30px 20px;
+  text-align: center;
+  color: #888;
+}
+
+.empty-state p {
+  margin-bottom: 10px;
+}
