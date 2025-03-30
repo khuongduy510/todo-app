@@ -38,7 +38,7 @@ Dự án **To-Do List** là một ứng dụng quản lý công việc đơn gi�
 3. Tạo phiên bản nâng cấp với React hoặc Vue.js.
 
 ## Demo
-Bạn có thể xem trực tiếp bằng cách mở file `index.html` trong trình duyệt.
+![alt text](<Screenshot (18).png>)
 
 ## Đóng góp
 Nếu bạn muốn đóng góp vào dự án, hãy fork repository và gửi pull request.
